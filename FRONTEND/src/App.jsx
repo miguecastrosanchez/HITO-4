@@ -25,7 +25,8 @@ function App() {
     
     <Navbar/>
 
- <Pizza/>
+    <Home/>
+    <Pizza/>
 
     <Footer/>
 
