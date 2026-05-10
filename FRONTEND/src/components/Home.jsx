@@ -5,7 +5,7 @@ function Pizza() {
   const [pizzas, setPizzas] = useState([]);
 
   const getPizzas = async () => {
-    const obtenerPizzas = await fetch("http://localhost:5001/api/pizzas");
+    const obtenerPizzas = await fetch("https://hito-4.onrender.com/api/pizzas");
     const data = await obtenerPizzas.json();
     console.log(data);
     setPizzas(data);
@@ -38,7 +38,7 @@ function Pizza() {
               <div className="col-md-4 mb-4 d-flex" key={pizza.id}>
                 <div className="card card-pizza w-100 h-100">
                   <img
-                    src={"http://localhost:5001/" + pizza.img}
+                    src={pizza.img}
                     className="card-img-top imagen-pizza"
                     alt={pizza.name}
                   />

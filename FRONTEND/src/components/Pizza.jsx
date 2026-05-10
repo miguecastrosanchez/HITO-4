@@ -6,7 +6,7 @@ function Pizza() {
 
   const [pizza, setPizza] = useState(null);
 
-  const apiUrl = "http://localhost:5001/api/pizzas/p00" + selecpizza;
+  const apiUrl = "https://hito-4.onrender.com/api/pizzas/p00" + selecpizza;
 
   const getPizzaSelect = async () => {
     const respuesta = await fetch(apiUrl);
