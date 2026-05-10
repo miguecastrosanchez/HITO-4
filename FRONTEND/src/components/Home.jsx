@@ -52,7 +52,7 @@ function Pizza() {
                       </h5>
 
                       <p className="ingredientes fs-6 text-center">
-                        🍕 {pizza.ingredients}
+                        🍕 {pizza.ingredients.join(", ")}
                       </p>
 
                       <hr />
