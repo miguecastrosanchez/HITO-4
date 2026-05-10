@@ -14,6 +14,11 @@ app.use(cors());
 app.use("/api/auth", authRoute);
 app.use("/api/pizzas", pizzaRoute);
 app.use("/api/checkouts", checkoutRoute);
+
+app.get("/", (req, res) => {
+  res.send("API HITO-4 funcionando correctamente");
+});
+
 app.use((_, res) => {
   res.status(404).json({ error: "Not Found" });
 });
